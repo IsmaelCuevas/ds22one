@@ -32,3 +32,9 @@
 // -> n integer
 // <- the n first elements of 2^n
 
+//numeros triangulares
+let resultado=0;
+for(let i=1;i<10;i++){
+  resultado +=i;
+  console.log(resultado)
+}
