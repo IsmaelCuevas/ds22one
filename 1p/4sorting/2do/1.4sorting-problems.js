@@ -23,3 +23,17 @@
 // + print
 // - time it took
 // - steps it tooks
+
+//Arreglos ordenados
+let contador=0, a = [1,2,4,5,6,7];
+
+for (let i=0; i<a.length-1;i++){
+  if(a[i]<a[i+1])
+    contador+=1;
+  else{
+    console.log("No Ordenado")
+    break;
+  }
+}
+    if(contador==5)
+    console.log("Ordenado")
