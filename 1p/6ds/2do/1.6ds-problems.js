@@ -16,3 +16,11 @@
 // b. add each random name into a Map
 // c. measure the time it took
 // d. calculate the average of 7 runs
+
+//Objeto Map
+let random;
+let map = new Map();
+for(let i=1; i<10000;i++){
+  random = Math.floor(Math.random()*10000+1)
+  map.set("name"+random,random)
+}
