@@ -14,3 +14,17 @@
 //   random(n)
 // -> n integer
 // <- one random number in [1-n]
+
+//numeros primos
+let vec=[];
+for (let i=2;i<100;i++){
+    vec[i]= i;
+}
+for(let i=0;i<vec.length;i++){
+    for(let k=2;k<=vec.length;k++){
+    if(vec[i]%k===0 && vec[i]!= k){
+        vec.splice(i,1);
+    }
+}
+}
+console.log(vec);
